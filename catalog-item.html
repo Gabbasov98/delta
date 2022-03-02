@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel='stylesheet' href='css/jquery.mCustomScrollbar.css' />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Газоанализатор ИГС-98 заголовок в две строки</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <header class="header">
+            <section class='header-top'>
+                <div class='container'>
+                    <div class='header-top__inner'>
+                        <a href="tel:8 (4722) 25-71-11" class="header__phone">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.74214 5.68189C4.66901 6.59373 4.27576 8.25671 5.20237 9.59081C6.06948 10.8392 7.16175 11.9313 8.4099 12.798C9.74405 13.7244 11.407 13.3311 12.3187 12.2579L12.3289 12.2626C13.4934 12.8021 14.7304 13.1718 16 13.3603V16L15.9989 16L15.9961 16C8.02151 16.0113 1.99148 9.91112 2.00001 2.00359V2H4.63937L4.63954 2.00117C4.828 3.27065 5.19761 4.50654 5.73714 5.67108L5.74214 5.68189ZM15.9989 18H17C17.5523 18 18 17.5523 18 17V12.4977C18 12.0021 17.637 11.5813 17.1468 11.5086L16.2926 11.3818C15.2123 11.2215 14.1605 10.9069 13.1695 10.4478L12.4166 10.0991C11.9804 9.897 11.462 10.034 11.1826 10.4253L10.8418 10.9024C10.5431 11.3206 9.97278 11.4484 9.55065 11.1552C8.49835 10.4245 7.57607 9.50243 6.84502 8.44989C6.55181 8.02774 6.67955 7.45737 7.09783 7.15866L7.57477 6.81807C7.96609 6.53861 8.10311 6.02021 7.90097 5.5839L7.55184 4.83033C7.09274 3.8394 6.77823 2.78774 6.61786 1.70749L6.49104 0.853159C6.41827 0.362959 5.99745 0 5.50188 0H1.00001C0.447726 0 1.02262e-05 0.447715 1.02262e-05 1V2.00143C-0.00970936 11.0079 6.91023 18.0129 15.9989 18Z" fill="white"/>
+                                </svg>
+                            <span>8 (4722) 25-71-11</span>
+                        </a>
+                        <a href="mailto:info@ximtek.ru" class="header__mail">
+                            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 16H2C0.89543 16 0 15.1046 0 14V1.913C0.0466084 0.842548 0.928533 -0.00101238 2 9.11911e-07H18C19.1046 9.11911e-07 20 0.895432 20 2V14C20 15.1046 19.1046 16 18 16ZM2 3.868V14H18V3.868L10 9.2L2 3.868ZM2.8 2L10 6.8L17.2 2H2.8Z" fill="white"/>
+                                </svg>
+                            <span>info@ximtek.ru</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class='header-middle'>
+                <div class='container'>
+                    <div class='header-middle__inner'>
+                        <a href="" class="header__logo">
+                            <img src="images/logo.png" alt="">
+                        </a>
+                        <div class="header__catalog-btn header__catalog-btn--dekstop btn btn-blue">
+                            <div class="header__catalog-btn-burger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <span>Каталог</span>
+                        </div>
+                        <div class="header__search">
+                            <input type="text" placeholder="Искать на сайте">
+                            <button class="header__search-btn btn btn-blue">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.677 17.1069L9.96198 11.3909C7.41965 13.1984 3.91642 12.7562 1.90285 10.3738C-0.110711 7.99141 0.0371394 4.46349 2.24298 2.2579C4.44824 0.0513442 7.97651 -0.097146 10.3594 1.91631C12.7422 3.92977 13.1846 7.43334 11.377 9.9759L17.092 15.6919L15.678 17.1059L15.677 17.1069ZM6.48498 2.49988C4.58868 2.49946 2.95267 3.83057 2.56745 5.68733C2.18224 7.54409 3.15369 9.41617 4.89366 10.1701C6.63362 10.9241 8.66388 10.3527 9.75522 8.80195C10.8466 7.25117 10.699 5.14721 9.40198 3.7639L10.007 4.3639L9.32498 3.6839L9.31298 3.6719C8.56477 2.91907 7.54637 2.49702 6.48498 2.49988Z" fill="white"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="header__mob-nav">
+                            <div class="header__catalog-btn header__catalog-btn--mob">
+                                <div class="header__lk-top">
+                                    <div class="header__catalog-btn-burger">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <span>Каталог</span>
+                            </div>
+                            <a href="" class="header__cart">
+                                <div class="header__cart-top">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.50397 1.97705H5.32215L7.88033 14.7584C7.96762 15.1979 8.2067 15.5926 8.55572 15.8736C8.90473 16.1546 9.34145 16.3038 9.78942 16.2952H19.0676C19.5156 16.3038 19.9523 16.1546 20.3013 15.8736C20.6503 15.5926 20.8894 15.1979 20.9767 14.7584L22.504 6.74978H6.27669M10.0949 21.068C10.0949 21.5951 9.66751 22.0225 9.14033 22.0225C8.61315 22.0225 8.18579 21.5951 8.18579 21.068C8.18579 20.5408 8.61315 20.1134 9.14033 20.1134C9.66751 20.1134 10.0949 20.5408 10.0949 21.068ZM20.5949 21.068C20.5949 21.5951 20.1675 22.0225 19.6403 22.0225C19.1131 22.0225 18.6858 21.5951 18.6858 21.068C18.6858 20.5408 19.1131 20.1134 19.6403 20.1134C20.1675 20.1134 20.5949 20.5408 20.5949 21.068Z" stroke="#00539F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <i>99</i>
+                                </div>
+                                <div class="header__cart-title">999999 ₽</div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section class='header-catalog'>
+                <div class='container'>
+                    <div class="header-catalog__top">
+                        <div class="header-catalog__top-title">
+                            <span>Каталог</span>
+                            <button class="header-catalog__close">
+                                <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.59 0.5L7 6.09L1.41 0.5L0 1.91L5.59 7.5L0 13.09L1.41 14.5L7 8.91L12.59 14.5L14 13.09L8.41 7.5L14 1.91L12.59 0.5Z" fill="#242321"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class='header-catalog__inner'>
+                        <div class="header-catalog__left">
+                            <div class="header-catalog__tab header-catalog__tab--active" data-tabs-path="1">Категория 1</div>
+                            <div class="header-catalog__tab" data-tabs-path="2">Категория 2</div>
+                            <div class="header-catalog__tab" data-tabs-path="3">Категория 3</div>
+                            <div class="header-catalog__tab" data-tabs-path="4">Категория 4</div>
+                            <div class="header-catalog__tab" data-tabs-path="5">Категория 5</div>
+                            <div class="header-catalog__tab" data-tabs-path="6">Категория 6</div>
+                            <div class="header-catalog__tab" data-tabs-path="7">Категория 7</div>
+                            <div class="header-catalog__tab" data-tabs-path="8">Категория 8</div>
+                        </div>
+                        <div class="header-catalog__right">
+                            <div class="header-catalog__back">
+                                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.288086 7.00023L6.29809 13.0102L7.71209 11.5962L3.11209 6.99623L7.71209 2.39623L6.29809 0.990234L0.288086 7.00023Z" fill="#1DAFD1"/>
+                                </svg>
+                                <span>Назад</span>
+                            </div>
+                            <div class="header-catalog__content header-catalog__content--active" data-content-path="1">
+                                <div class="header-catalog__group">
+                                    <div class="header-catalog__title">Подкатегория</div>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                </div>
+                                <div class="header-catalog__group">
+                                    <div class="header-catalog__title">Подкатегория</div>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                </div>
+                                <div class="header-catalog__group">
+                                    <div class="header-catalog__title">Подкатегория</div>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                </div>
+                                <div class="header-catalog__group">
+                                    <div class="header-catalog__title">Подкатегория</div>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                </div>
+                            </div>
+                            <div class="header-catalog__content" data-content-path="2">
+                                <div class="header-catalog__group">
+                                    <div class="header-catalog__title">Подкатегория</div>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                </div>
+                                <div class="header-catalog__group">
+                                    <div class="header-catalog__title">Подкатегория</div>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                </div>
+                                <div class="header-catalog__group">
+                                    <div class="header-catalog__title">Подкатегория</div>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                </div>
+                                <div class="header-catalog__group">
+                                    <div class="header-catalog__title">Подкатегория</div>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                </div>
+                            </div>
+                            <div class="header-catalog__content" data-content-path="3">
+                                <div class="header-catalog__group">
+                                    <div class="header-catalog__title">Подкатегория</div>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                </div>
+                                <div class="header-catalog__group">
+                                    <div class="header-catalog__title">Подкатегория</div>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                </div>
+                                <div class="header-catalog__group">
+                                    <div class="header-catalog__title">Подкатегория</div>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                </div>
+                                <div class="header-catalog__group">
+                                    <div class="header-catalog__title">Подкатегория</div>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                </div>
+                            </div>
+                            <div class="header-catalog__content" data-content-path="4">
+                                <div class="header-catalog__group">
+                                    <div class="header-catalog__title">Подкатегория</div>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                </div>
+                                <div class="header-catalog__group">
+                                    <div class="header-catalog__title">Подкатегория</div>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                </div>
+                                <div class="header-catalog__group">
+                                    <div class="header-catalog__title">Подкатегория</div>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                </div>
+                                <div class="header-catalog__group">
+                                    <div class="header-catalog__title">Подкатегория</div>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                </div>
+                            </div>
+                            <div class="header-catalog__content" data-content-path="5">
+                                <div class="header-catalog__group">
+                                    <div class="header-catalog__title">Подкатегория</div>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                </div>
+                                <div class="header-catalog__group">
+                                    <div class="header-catalog__title">Подкатегория</div>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                </div>
+                                <div class="header-catalog__group">
+                                    <div class="header-catalog__title">Подкатегория</div>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                </div>
+                                <div class="header-catalog__group">
+                                    <div class="header-catalog__title">Подкатегория</div>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                </div>
+                            </div>
+                            <div class="header-catalog__content" data-content-path="6">
+                                <div class="header-catalog__group">
+                                    <div class="header-catalog__title">Подкатегория</div>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                </div>
+                                <div class="header-catalog__group">
+                                    <div class="header-catalog__title">Подкатегория</div>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                </div>
+                                <div class="header-catalog__group">
+                                    <div class="header-catalog__title">Подкатегория</div>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                </div>
+                                <div class="header-catalog__group">
+                                    <div class="header-catalog__title">Подкатегория</div>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                </div>
+                            </div>
+                            <div class="header-catalog__content" data-content-path="7">
+                                <div class="header-catalog__group">
+                                    <div class="header-catalog__title">Подкатегория</div>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                </div>
+                                <div class="header-catalog__group">
+                                    <div class="header-catalog__title">Подкатегория</div>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                </div>
+                                <div class="header-catalog__group">
+                                    <div class="header-catalog__title">Подкатегория</div>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                </div>
+                                <div class="header-catalog__group">
+                                    <div class="header-catalog__title">Подкатегория</div>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                </div>
+                            </div>
+                            <div class="header-catalog__content" data-content-path="8">
+                                <div class="header-catalog__group">
+                                    <div class="header-catalog__title">Подкатегория</div>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                </div>
+                                <div class="header-catalog__group">
+                                    <div class="header-catalog__title">Подкатегория</div>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                </div>
+                                <div class="header-catalog__group">
+                                    <div class="header-catalog__title">Подкатегория</div>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                </div>
+                                <div class="header-catalog__group">
+                                    <div class="header-catalog__title">Подкатегория</div>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                    <a href="" class="header-catalog__link">Под-подкатегория</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class='header-bottom'>
+                <div class='container'>
+                    <div class="nav">
+                        <div class="nav__item">
+                            <a href="" class="nav__link">
+                                <span>Оплата и доставка</span>
+                            </a>
+                        </div>
+                        <div class="nav__item">
+                            <div class="nav__item-show">
+                                <span>О компании</span>
+                                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 5.5L10 0.5L0 0.5L5 5.5Z" fill="#242321"/>
+                                </svg>
+                            </div>
+                            <div class="nav__item-hidden">
+                                <div class="nav__item-hidden-inner">
+                                    <a href="">lorem1</a>
+                                    <a href="">lorem1</a>
+                                    <a href="">lorem1</a>
+                                    <a href="">lorem1</a>
+                                    <a href="">lorem1</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nav__item">
+                            <a href="" class="nav__link">
+                                <span>Сервис и обслуживание</span>
+                            </a>
+                        </div>
+                        <div class="nav__item">
+                            <a href="" class="nav__link">
+                                <span>Новости</span>
+                            </a>
+                        </div>
+                        <div class="nav__item">
+                            <a href="" class="nav__link">
+                                <span>Контакты</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+
+
+        <div class="breadcrumbs">
+            <div class="container">
+                <div class='breadcrumbs__wrap'>
+                    <a class='breadcrumbs__item' href='index.html'>
+                        Главная
+                    </a>
+                    <a class='breadcrumbs__item'>
+                        Каталог
+                    </a>
+                    <a class='breadcrumbs__item'>
+                        Категория
+                    </a>
+                    <span class='breadcrumbs__item'>
+                        Газоанализатор ИГС-98 заголовок в две строки
+                    </span>
+                </div>
+
+            </div>
+        </div>
+
+        <main class="content">
+            <section class='catalog-item'>
+                <div class='container'>
+                    <div class='catalog-item__inner'>
+                        <div class="catalog-item__left">
+                            <div class="catalog-item__gallery">
+                                <div class="swiper mySwiper2 catalog-item__gallery-big">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a class="catalog-item__gallery-big-item" data-fancybox='gallery' href='images/gallery1.png'>
+                                                <img src="images/gallery1.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a class="catalog-item__gallery-big-item" data-fancybox='gallery' href='images/gallery2.png'>
+                                                <img src="images/gallery2.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a class="catalog-item__gallery-big-item" data-fancybox='gallery' href='images/gallery1.png'>
+                                                <img src="images/gallery3.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a class="catalog-item__gallery-big-item" data-fancybox='gallery' href='images/gallery2.png'>
+                                                <img src="images/gallery2.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div thumbsSlider="" class="swiper mySwiper catalog-item__gallery-small">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="catalog-item__gallery-small-item">
+                                                <img src="images/gallery1.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="catalog-item__gallery-small-item">
+                                                <img src="images/gallery2.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="catalog-item__gallery-small-item">
+                                                <img src="images/gallery3.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="catalog-item__gallery-small-item">
+                                                <img src="images/gallery2.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="catalog-item__right">
+                            <h2 class="catalog-item__title">Газоанализатор <br> ИГС-98</h2>
+                            <div class="catalog-item__badge">В наличии</div>
+                            <div class="catalog-item__prices">
+                                <div class="catalog-item__price-new">1200 ₽</div>
+                                <div class="catalog-item__price-old">1200 ₽</div>
+                            </div>
+                            <div class="catalog-item__cart">
+                                <div class='catalog-item__calc ccalc cartcalc'>
+                                    <button class='ccalc-minus btn'>
+                                        <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 2V0H14V2H0Z" fill="#00539F"/>
+                                        </svg>
+                                    </button>
+                                    <input type='text' value='99'>
+                                    <button class='ccalc-plus btn'>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 8V14H6V8H0V6H6V0H8V6H14V8H8Z" fill="#00539F"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <button class="catalog-item__cart-btn btn btn-blue">В корзину</button>
+                            </div>
+                            <div class="catalog-item__size">
+                                <div class="catalog-item__size-title">Выберите модификацию</div>
+                                <select name="" id="" class="custom-select catalog-item__size-select">
+                                    <option value="">«Комета-М» исполнение 005</option>
+                                    <option value="">«Комета-М» исполнение 005</option>
+                                    <option value="">«Комета-М» исполнение 005</option>
+                                    <option value="">«Комета-М» исполнение 005</option>
+                                </select>
+                            </div>
+                            <div class="catalog-item__properties">
+                                <div class="catalog-item__properties-title">Характеристики</div>
+                                <div class="catalog-item__properties-wrap">
+                                    <div class="catalog-item__property">
+                                        <div class="catalog-item__property-left">Размер</div>
+                                        <div class="catalog-item__property-right">270 мм</div>
+                                    </div>
+                                    <div class="catalog-item__property">
+                                        <div class="catalog-item__property-left">Ширина</div>
+                                        <div class="catalog-item__property-right">270 мм</div>
+                                    </div>
+                                    <div class="catalog-item__property">
+                                        <div class="catalog-item__property-left">Высота</div>
+                                        <div class="catalog-item__property-right">270 мм</div>
+                                    </div>
+                                    <div class="catalog-item__property">
+                                        <div class="catalog-item__property-left">Длина</div>
+                                        <div class="catalog-item__property-right">270 мм</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-item__info">
+                        <div class="catalog-item__tabs">
+                            <div class="catalog-item__tab catalog-item__tab--active" data-tabs-path="1">Описание</div>
+                            <div class="catalog-item__tab" data-tabs-path="2">Отзывы</div>
+                            <div class="catalog-item__tab" data-tabs-path="3">Документы</div>
+                        </div>
+                        <div class="catalog-item__content catalog-item__content--active" data-content-path="1">
+                            <p>Приобретая моющие средства для профессиональной уборки, а также грязезащитные покрытия, можно решить вопрос с чистотой помещений. Все загрязнения будут оперативно удаляться, так как скапливаться они будут на специальном слое.
+                                Ареал использования грязезащитной продукции — это торговые центры, мастерские, магазины, офисы, кинотеатры, автомобильные сервисы и другие места. Роль покрытий в деле поддержания чистоты помещений неоценима.</p>
+                            <p>Приобретая моющие средства для профессиональной уборки, а также грязезащитные покрытия, можно решить вопрос с чистотой помещений. Все загрязнения будут оперативно удаляться, так как скапливаться они будут на специальном слое.
+                                Ареал использования грязезащитной продукции — это торговые центры, мастерские, магазины, офисы, кинотеатры, автомобильные сервисы и другие места. Роль покрытий в деле поддержания чистоты помещений неоценима.</p>
+                        </div>
+                        <div class="catalog-item__content" data-content-path="2">
+                            <div class="catalog-item__feedback">
+                                <div class="catalog-item__feedback-item">
+                                    <div class="catalog-item__feedback-item-name">Константин </div>
+                                    <div class="catalog-item__feedback-item-date">28.02.2018</div>
+                                    <div class="catalog-item__feedback-item-desc">Подписывайтесь на специальную рассылку ТД ХимТек. <br> Вы узнаете обо всех нюансах мойки и дезинфекции, примерах из нашего опыта, <br> специальных предложениях и о многом другом.</div>
+                                </div>
+                                <div class="catalog-item__feedback-item">
+                                    <div class="catalog-item__feedback-item-name">Константин </div>
+                                    <div class="catalog-item__feedback-item-date">28.02.2018</div>
+                                    <div class="catalog-item__feedback-item-desc">Подписывайтесь на специальную рассылку ТД ХимТек. <br> Вы узнаете обо всех нюансах мойки и дезинфекции, примерах из нашего опыта, <br> специальных предложениях и о многом другом.</div>
+                                    <div class="catalog-item__feedback-item-images">
+                                        <div class="catalog-item__feedback-item-image">
+                                            <img src="images/gallery2.png" alt="">
+                                        </div>
+                                        <div class="catalog-item__feedback-item-image">
+                                            <img src="images/gallery2.png" alt="">
+                                        </div>
+                                        <div class="catalog-item__feedback-item-image">
+                                            <img src="images/gallery2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog-item__newfeedback">
+                                    <h3 class="catalog-item__newfeedback-title">Оставить отзыв</h3>
+                                    <form action="" class="catalog-item__newfeedback-form">
+                                        <div class="catalog-item__newfeedback-form-group">
+                                            <input type="text" placeholder="Имя">
+                                        </div>
+                                        <div class="catalog-item__newfeedback-form-group">
+                                            <textarea placeholder="Текст отзыва"></textarea>
+                                        </div>
+                                        <div class="catalog-item__newfeedback-buttons">
+                                            <button class="catalog-item__newfeedback-btn btn btn-blue">Отправить</button>
+                                            <button class="catalog-item__newfeedback-img btn">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M16 18H2C0.89543 18 0 17.1046 0 16V2C0 0.89543 0.89543 0 2 0H16C17.1046 0 18 0.89543 18 2V16C18 17.1046 17.1046 18 16 18ZM2 2V16H16V2H2ZM15 14H3L6 10L7 11L10 7L15 14ZM5.5 8C4.67157 8 4 7.32843 4 6.5C4 5.67157 4.67157 5 5.5 5C6.32843 5 7 5.67157 7 6.5C7 7.32843 6.32843 8 5.5 8Z" fill="#1DAFD1"/>
+                                                </svg>
+                                                <span>Прикрепить фото</span>
+                                                <input type="file" name="" id="">
+                                            </button>
+                                        </div>
+                                        <div class="catalog-item__newfeedback-preview">
+                                            <div class="catalog-item__newfeedback-preview-item">
+                                                <button class="catalog-item__newfeedback-preview-remove">
+                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41L12.59 0Z" fill="#1DAFD1"/>
+                                                    </svg>
+                                                </button>
+                                                <img src="images/gallery2.png" alt="">
+                                            </div>
+                                            <div class="catalog-item__newfeedback-preview-item">
+                                                <button class="catalog-item__newfeedback-preview-remove">
+                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41L12.59 0Z" fill="#1DAFD1"/>
+                                                    </svg>
+                                                </button>
+                                                <img src="images/gallery2.png" alt="">
+                                            </div>
+                                            <div class="catalog-item__newfeedback-preview-item">
+                                                <button class="catalog-item__newfeedback-preview-remove">
+                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41L12.59 0Z" fill="#1DAFD1"/>
+                                                    </svg>
+                                                </button>
+                                                <img src="images/gallery2.png" alt="">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog-item__content" data-content-path="3">
+                            3
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class='discount'>
+                <div class='container'>
+                    <div class='discount__top'>
+                        <h3 class="discount__title">
+                            <span>С этим товаром покупают</span>
+                        </h3>
+                        <div class="discount__slider-nav">
+                            <div class='swiper-button-prev discount__slider-prev'>
+                                <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.53499 0.515015L0.0499871 9.00001L8.53499 17.485L9.94999 16.071L2.87799 9.00001L9.94999 1.92902L8.53499 0.515015Z" fill="#242321"/>
+                                </svg>
+                            </div>
+                            <div class='swiper-button-next discount__slider-next'>
+                                <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.46501 17.485L9.95001 8.99999L1.46501 0.514984L0.0500126 1.92898L7.12201 8.99999L0.0500126 16.071L1.46501 17.485Z" fill="#242321"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="discount__slider">
+                        <div class='swiper-container'>
+                            <div class='swiper-wrapper'>
+                                <div class='swiper-slide'>
+                                    <div class="card">
+                                        <div class="card__top">
+                                            <div class="card__available">В наличии</div>
+                                            <div class="card__img">
+                                                <img src="images/card.png" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="card__prices">
+                                            <div class="card__price">1200 ₽</div>
+                                        </div>
+                                        <div class="card__desc">Газоанализатор ИГС-98 заголовок в две строки</div>
+                                        <button class="card__btn btn btn-blue">В корзину</button>
+                                    </div>
+                                </div>
+                                <div class='swiper-slide'>
+                                    <div class="card">
+                                        <div class="card__top">
+                                            <div class="card__available card__available--not">Нет в наличии</div>
+                                            <div class="card__img">
+                                                <img src="images/card.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card__prices">
+                                            <div class="card__price">1200 ₽</div>
+                                        </div>
+                                        <div class="card__desc">Газоанализатор ИГС-98 <br> заголовок в две <br> и даже три строки</div>
+                                        <button class="card__btn btn btn-grey">Узнать о поступлении</button>
+                                    </div>
+                                </div>
+                                <div class='swiper-slide'>
+                                    <div class="card">
+                                        <div class="card__top">
+                                            <div class="card__available">В наличии</div>
+                                            <div class="card__img">
+                                                <img src="images/card.png" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="card__prices">
+                                            <div class="card__price">1200 ₽</div>
+                                        </div>
+                                        <div class="card__desc">Газоанализатор ИГС-98 заголовок в две строки</div>
+                                        <button class="card__btn btn btn-blue">В корзину</button>
+                                    </div>
+                                </div>
+                                <div class='swiper-slide'>
+                                    <div class="card">
+                                        <div class="card__top">
+                                            <div class="card__available card__available--not">Нет в наличии</div>
+                                            <div class="card__img">
+                                                <img src="images/card.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card__prices">
+                                            <div class="card__price">1200 ₽</div>
+                                        </div>
+                                        <div class="card__desc">Газоанализатор ИГС-98 <br> заголовок в две <br> и даже три строки</div>
+                                        <button class="card__btn btn btn-grey">Узнать о поступлении</button>
+                                    </div>
+                                </div>
+                                <div class='swiper-slide'>
+                                    <div class="card">
+                                        <div class="card__top">
+                                            <div class="card__available">В наличии</div>
+                                            <div class="card__img">
+                                                <img src="images/card.png" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="card__prices">
+                                            <div class="card__price">1200 ₽</div>
+                                        </div>
+                                        <div class="card__desc">Газоанализатор ИГС-98 заголовок в две строки</div>
+                                        <button class="card__btn btn btn-blue">В корзину</button>
+                                    </div>
+                                </div>
+                                <div class='swiper-slide'>
+                                    <div class="card">
+                                        <div class="card__top">
+                                            <div class="card__available card__available--not">Нет в наличии</div>
+                                            <div class="card__img">
+                                                <img src="images/card.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card__prices">
+                                            <div class="card__price">1200 ₽</div>
+                                        </div>
+                                        <div class="card__desc">Газоанализатор ИГС-98 <br> заголовок в две <br> и даже три строки</div>
+                                        <button class="card__btn btn btn-grey">Узнать о поступлении</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='swiper-pagination'></div>
+
+                            <div class='swiper-scrollbar'></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+        </main>
+
+        <footer class="footer">
+            <section class='footer-top'>
+                <div class='container'>
+                    <a href="" class="footer__logo">
+                        <img src="images/logo.png" alt="">
+                    </a>
+                    <div class='footer-top__inner'>
+                        <div class="footer__col">
+                            <div class="footer__desc">Вот уже более 20 лет АО «НПП «Дельта» разрабатывает и производит широкий спектр газоанализаторов. Приборы востребованы в рабочих зонах промышленных предприятий, службами ЖКХ, хладокомбинатами, подземными паркингами, помещениях
+                                ГРП и многими другими.</div>
+                        </div>
+                        <div class="footer__col">
+                            <div class="footer__title">О компании</div>
+                            <a href="" class="footer__link">О компании</a>
+                            <a href="" class="footer__link">Услуги и сервисное
+                                обслуживание</a>
+                            <a href="" class="footer__link">Новости</a>
+                        </div>
+                        <div class="footer__col">
+                            <div class="footer__title">Каталог</div>
+                            <a href="" class="footer__link">Индивидуальные <br> газоанализаторы ИГС-98</a>
+                            <a href="" class="footer__link">Стационарные газоанализаторы ИГС-98</a>
+                            <a href="" class="footer__link">Переносные многоканальные газоанализаторы ИГС-98</a>
+                            <a href="" class="footer__link">Системы контроля концентрации газов</a>
+                            <a href="" class="footer__link">Специальные технические <br> средства досмотра</a>
+                        </div>
+                        <div class="footer__col">
+                            <div class="footer__title">Помощь</div>
+                            <a href="" class="footer__link">Гарантия и возврат</a>
+                            <a href="" class="footer__link">Юридическим лицам</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class='footer-bottom'>
+                <div class='container'>
+                    <div class='footer-bottom__inner'>
+                        <div class="footer-bottom__left">
+                            <div class="footer__by">© 2022 АО «НПП «Дельта»</div>
+                            <a href="" class="footer__privacy">Политика конфиденциальности</a>
+                        </div>
+                        <div class="footer__pay">
+                            <a href="" class="footer__pay-item">
+                                <img src="images/mastercard.svg" alt="">
+                            </a>
+                            <a href="" class="footer__pay-item">
+                                <img src="images/visa.svg" alt="">
+                            </a>
+                            <a href="" class="footer__pay-item">
+                                <img src="images/mir.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+
+
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/jquery.nice-select.min.js"></script>
+        <script src="js/jquery.maskedinput.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.fancybox.min.js"></script>
+        <script src='js/jquery.mCustomScrollbar.concat.min.js'></script>
+        <script src="js/swiper.js"></script>
+        <script src="js/index.js"></script>
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+.page {
+    padding: 20px 0 80px;
+    &__inner {
+        display: flex;
+    }
+    &__left {
+        width: 270px;
+        margin-right: 30px;
+        flex-shrink: 0;
+        &-title {
+            font-style: normal;
+            margin-bottom: 15px;
+        }
+        &-link:not(:last-child) {
+            margin-bottom: 10px;
+        }
+        &-link {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 156%;
+            color: #242321;
+            display: block;
+            &--active {
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 110%;
+                color: #242321;
+                pointer-events: none;
+            }
+            &:hover {
+                color: #00539F;
+            }
+        }
+    }
+    &__right {
+        padding-top: 7px;
+        &-title {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 110%;
+            color: #242321;
+        }
+    }
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 38px;
+        .custom-select {
+            width: 270px;
+            margin-left: 20px;
+        }
+    }
+}
