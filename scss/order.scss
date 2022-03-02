@@ -17,40 +17,9 @@
     }
     &__check {
         flex-shrink: 0;
-        position: relative;
-        input {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            opacity: 0;
-            &:checked+label {
-                &:before {
-                    background-image: url(../images/checked.svg);
-                }
-            }
-        }
         label {
-            padding-left: 25px;
-            position: relative;
-            font-size: 16px;
-            line-height: 136%;
-            margin-bottom: 0;
-            font-weight: normal;
             min-height: 17px;
             min-width: 17px;
-            cursor: pointer;
-            &:before {
-                content: '';
-                position: absolute;
-                z-index: 1;
-                top: 2.5px;
-                left: 0;
-                background-image: url(../images/check.svg);
-                background-size: 100% 100%;
-                width: 17px;
-                height: 17px;
-                transition: all .2s;
-            }
         }
     }
     &__delete {
@@ -161,6 +130,117 @@
     }
 }
 
+.order {
+    padding: 30px 0 145px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left {
+        width: 570px;
+        margin-right: 30px;
+    }
+    &__right {
+        width: 470px;
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 110%;
+        margin-bottom: 38px;
+    }
+    &__radio {
+        margin-bottom: 0;
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+    &__form {
+        margin-top: 58px;
+        &-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px 30px;
+        }
+        &-group {
+            &--100 {
+                grid-column: 1/3;
+            }
+        }
+        &-btn {
+            width: 100%;
+            height: 50px;
+            margin-top: 15px;
+            font-weight: 500;
+            font-size: 16px;
+        }
+    }
+    &__info {
+        &-title {
+            margin-bottom: 30px;
+        }
+        &-group {
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #F5F5F5;
+        }
+        &-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+            &-title {
+                font-size: 16px;
+                line-height: 136%;
+                span {
+                    color: rgba(36, 35, 33, 0.5);
+                }
+                &--big {
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 110%;
+                }
+            }
+            &-price {
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 110%;
+                &--big {
+                    font-weight: bold;
+                    font-size: 24px;
+                    color: #00539F;
+                }
+            }
+        }
+        &-pay {
+            &-title {
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 110%;
+                margin-bottom: 15px;
+            }
+        }
+        &-btn {
+            margin-top: 37px;
+            width: 100%;
+            height: 50px;
+            font-weight: 500;
+            font-size: 16px;
+        }
+        &-check {
+            margin-top: 35px;
+            label {
+                color: rgba(36, 35, 33, 0.5);
+                &:before {
+                    top: 4px;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 992px) {
     .cart {
         &__inner {
@@ -172,6 +252,19 @@
         }
         &__left {
             margin-top: 78px;
+        }
+    }
+    .order {
+        &__inner {
+            flex-wrap: wrap;
+        }
+        &__left {
+            max-width: 100%;
+            margin-right: 0;
+        }
+        &__right {
+            margin-top: 70px;
+            max-width: 100%;
         }
     }
 }
@@ -199,6 +292,25 @@
         .catalog-item__calc {
             margin-top: 20px;
             margin-right: 15px;
+        }
+    }
+    .order {
+        padding: 20px 0 100px;
+        &__form {
+            &-grid {
+                grid-template-columns: 1fr;
+            }
+            &-group {
+                input {
+                    width: calc(100% - 100px);
+                }
+                &--100 {
+                    grid-column: 1/2;
+                    input {
+                        width: 100%;
+                    }
+                }
+            }
         }
     }
 }

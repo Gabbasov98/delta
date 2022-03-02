@@ -255,7 +255,7 @@ $(document).ready(function() {
     $(".custom-select").niceSelect()
     $(".city-select").niceSelect()
 
-    $('input[type="tel"]').mask('+7 (999) 999-9999', { placeholder: '+7 (   )    -    ' });
+    $('input[type="tel"]').mask('+7 (999) 999-99-99', { placeholder: '+7 (   )    -  -  ' });
 
     $(".header__catalog-btn").click(function() {
         $(this).addClass("header__catalog-btn--active")
@@ -401,9 +401,9 @@ $(document).ready(function() {
 
     $(".cart__nav .cart__check input").change(function() {
         if ($(this).prop('checked')) {
-            $(".cart__check input").prop('checked', true)
+            $(".cart-card__check input").prop('checked', true)
         } else {
-            $(".cart__check input").prop('checked', false)
+            $(".cart-card__check input").prop('checked', false)
         }
 
     })

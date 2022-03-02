@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel='stylesheet' href='css/jquery.mCustomScrollbar.css' />
     <link rel="stylesheet" href="css/style.css">
-    <title>Корзина</title>
+    <title>Оформление заказа</title>
 </head>
 
 <body>
@@ -59,6 +59,12 @@
                             </button>
                         </div>
                         <div class="header__mob-nav">
+                            <a href="" class="header__mob-nav-item">
+                                <svg width="25" height="22" viewBox="0 0 25 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.409 22.5H4.59092C3.96692 22.5 3.46106 21.9941 3.46106 21.3701V10.5392C3.46106 10.2396 3.5802 9.95227 3.79211 9.74043L11.7012 1.83137C11.9131 1.61921 12.2007 1.5 12.5005 1.5C12.8004 1.5 13.088 1.61921 13.2999 1.83137L21.209 9.74043C21.4211 9.95203 21.5399 10.2396 21.5389 10.5392V21.3701C21.5389 21.9941 21.033 22.5 20.409 22.5ZM10.2403 14.5909H14.7597V20.2403H19.2792V11.007L12.5 4.22782L5.72079 11.007V20.2403H10.2403V14.5909Z" fill="#00539F"/>
+                                </svg>
+                                <span>Главная</span>
+                            </a>
                             <div class="header__catalog-btn header__catalog-btn--mob">
                                 <div class="header__lk-top">
                                     <div class="header__catalog-btn-burger">
@@ -69,6 +75,13 @@
                                 </div>
                                 <span>Каталог</span>
                             </div>
+                            <a href="" class="header__mob-nav-item">
+                                <svg width="25" height="22" viewBox="0 0 25 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.66663 8C7.66663 5.23858 9.9052 3 12.6666 3C15.428 3 17.6666 5.23858 17.6666 8C17.6666 10.7614 15.428 13 12.6666 13C9.9052 13 7.66663 10.7614 7.66663 8ZM12.6666 11C14.3235 11 15.6666 9.65685 15.6666 8C15.6666 6.34315 14.3235 5 12.6666 5C11.0098 5 9.66663 6.34315 9.66663 8C9.66663 9.65685 11.0098 11 12.6666 11Z" fill="#00539F"/>
+                                    <path d="M7.00977 16.3431C5.50948 17.8434 4.66663 19.8783 4.66663 22H6.66663C6.66663 20.4087 7.29877 18.8826 8.42399 17.7574C9.5492 16.6321 11.0753 16 12.6666 16C14.2579 16 15.784 16.6321 16.9093 17.7574C18.0345 18.8826 18.6666 20.4087 18.6666 22H20.6666C20.6666 19.8783 19.8238 17.8434 18.3235 16.3431C16.8232 14.8429 14.7884 14 12.6666 14C10.5449 14 8.51006 14.8429 7.00977 16.3431Z" fill="#00539F"/>
+                                </svg>
+                                <span>Константин</span>
+                            </a>
                             <a href="" class="header__cart">
                                 <div class="header__cart-top">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -360,8 +373,11 @@
                     <a class='breadcrumbs__item' href='index.html'>
                         Главная
                     </a>
+                    <a class='breadcrumbs__item'>
+                        Корзина 
+                    </a>
                     <span class='breadcrumbs__item'>
-                        Корзина
+                        Оформление заказа
                     </span>
                 </div>
 
@@ -370,133 +386,118 @@
 
         <main class="content">
 
-            <section class='cart'>
+            <section class='order'>
                 <div class='container'>
-                    <div class='cart__inner'>
-                        <div class="cart__left">
-                            <div class="cart__nav">
-                                <div class="cart__check check">
-                                    <input type='checkbox' class='checkbox' id='c' />
-                                    <label for='c'>Выбрать все</label>
+                    <div class='order__inner'>
+                        <div class="order__left">
+                            <div class="order__title">Выберите тип плательщика</div>
+                            <div class="order__type">
+                                <div class="order__radio radio">
+                                    <input checked type='radio' id='type1' name='type' />
+                                    <label for='type1'>Доставка курьером</label>
                                 </div>
-                                <button class="cart__delete">Удалить выбранные</button>
-                            </div>
-                            <div class="cart__items">
-                                <div class="cart-card">
-                                    <div class="cart-card__check check">
-                                        <input type='checkbox' class='checkbox' id='c2' />
-                                        <label for='c2'></label>
-                                    </div>
-                                    <a href="" class="cart-card__img">
-                                        <img src="images/card.png" alt="">
-                                    </a>
-                                    <div class="cart-card__content">
-                                        <div class="cart-card__subtitle">SKU 12314124124</div>
-                                        <a href="" class="cart-card__title">Газоанализатор ИГС-98</a>
-                                        <div class="cart-card__price">12200 ₽</div>
-                                        <div class="cart-card__nav">
-                                            <div class="catalog-item__calc ccalc cartcalc">
-                                                <button class="ccalc-minus btn btn-grey">
-                                                    <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M0 2V0H14V2H0Z" fill="#00539F"></path>
-                                                    </svg>
-                                                </button>
-                                                <input type="text" value="1">
-                                                <button class="ccalc-plus btn btn-grey">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M8 8V14H6V8H0V6H6V0H8V6H14V8H8Z" fill="#00539F"></path>
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                            <button class="cart-card__delete btn btn-grey">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M17 22H7C5.89543 22 5 21.1046 5 20V7H3V5H7V4C7 2.89543 7.89543 2 9 2H15C16.1046 2 17 2.89543 17 4V5H21V7H19V20C19 21.1046 18.1046 22 17 22ZM7 7V20H17V7H7ZM9 4V5H15V4H9ZM15 18H13V9H15V18ZM11 18H9V9H11V18Z" fill="#F24941"/>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
+                                <div class="order__radio radio">
+                                    <input type='radio' id='type2' name='type' />
+                                    <label for='type2'>Доставка по России</label>
                                 </div>
-                                <div class="cart-card">
-                                    <div class="cart-card__check check">
-                                        <input checked type='checkbox' class='checkbox' id='c3' />
-                                        <label for='c3'></label>
-                                    </div>
-                                    <a href="" class="cart-card__img">
-                                        <img src="images/card.png" alt="">
-                                    </a>
-                                    <div class="cart-card__content">
-                                        <div class="cart-card__subtitle">SKU 12314124124</div>
-                                        <a href="" class="cart-card__title">Газоанализатор ИГС-98</a>
-                                        <div class="cart-card__price">12200 ₽</div>
-                                        <div class="cart-card__nav">
-                                            <div class="catalog-item__calc ccalc cartcalc">
-                                                <button class="ccalc-minus btn btn-grey">
-                                                    <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M0 2V0H14V2H0Z" fill="#00539F"></path>
-                                                    </svg>
-                                                </button>
-                                                <input type="text" value="1">
-                                                <button class="ccalc-plus btn btn-grey">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M8 8V14H6V8H0V6H6V0H8V6H14V8H8Z" fill="#00539F"></path>
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                            <button class="cart-card__delete btn btn-grey">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M17 22H7C5.89543 22 5 21.1046 5 20V7H3V5H7V4C7 2.89543 7.89543 2 9 2H15C16.1046 2 17 2.89543 17 4V5H21V7H19V20C19 21.1046 18.1046 22 17 22ZM7 7V20H17V7H7ZM9 4V5H15V4H9ZM15 18H13V9H15V18ZM11 18H9V9H11V18Z" fill="#F24941"/>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="cart-card">
-                                    <div class="cart-card__check check">
-                                        <input type='checkbox' class='checkbox' id='c4' />
-                                        <label for='c4'></label>
-                                    </div>
-                                    <a href="" class="cart-card__img">
-                                        <img src="images/card.png" alt="">
-                                    </a>
-                                    <div class="cart-card__content">
-                                        <div class="cart-card__subtitle">SKU 12314124124</div>
-                                        <a href="" class="cart-card__title">Газоанализатор ИГС-98</a>
-                                        <div class="cart-card__price">12200 ₽</div>
-                                        <div class="cart-card__nav">
-                                            <div class="catalog-item__calc ccalc cartcalc">
-                                                <button class="ccalc-minus btn btn-grey">
-                                                    <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M0 2V0H14V2H0Z" fill="#00539F"></path>
-                                                    </svg>
-                                                </button>
-                                                <input type="text" value="1">
-                                                <button class="ccalc-plus btn btn-grey">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M8 8V14H6V8H0V6H6V0H8V6H14V8H8Z" fill="#00539F"></path>
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                            <button class="cart-card__delete btn btn-grey">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M17 22H7C5.89543 22 5 21.1046 5 20V7H3V5H7V4C7 2.89543 7.89543 2 9 2H15C16.1046 2 17 2.89543 17 4V5H21V7H19V20C19 21.1046 18.1046 22 17 22ZM7 7V20H17V7H7ZM9 4V5H15V4H9ZM15 18H13V9H15V18ZM11 18H9V9H11V18Z" fill="#F24941"/>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
+                                <div class="order__radio radio">
+                                    <input type='radio' id='type3' name='type' />
+                                    <label for='type3'>Самовывоз </label>
                                 </div>
                             </div>
+
+                            <form class="order__form">
+                                <div class="order__title">Заполните контактные данные</div>
+                                <div class="order__form-grid">
+                                    <fieldset class='order__form-group form-group'>
+                                        <input type='text' placeholder="Имя" />
+                                    </fieldset>
+                                    <fieldset class='order__form-group form-group'>
+                                        <input type='text' placeholder="Фамилия" />
+                                    </fieldset>
+                                    <fieldset class='order__form-group form-group'>
+                                        <input type='email' placeholder="Почта" />
+                                    </fieldset>
+                                    <fieldset class='order__form-group form-group'>
+                                        <input type='tel' placeholder="+ 7 (999) 999-99-99" />
+                                    </fieldset>
+                                    <fieldset class='order__form-group order__form-group--100 form-group'>
+                                        <input type='text' placeholder="Адрес доставки" />
+                                    </fieldset>
+                                    <fieldset class='order__form-group order__form-group--100 form-group'>
+                                        <textarea placeholder="Дополнительная информация"></textarea>
+                                    </fieldset>
+                                </div>
+                                <button class="order__form-btn btn btn-blue">Сохранить</button>
+                            </form>
                         </div>
-                        <div class="cart__right">
-                            <div class="cart__info">
-                                <div class="cart__info-title">Общая стоимость</div>
-                                <div class="cart__info-wrap">
-                                    <div class="cart__info-subtitle">
-                                        Товары <span>(3)</span>
+                        <div class="order__right">
+                            <div class="order__info">
+                                <div class="order__info-title order__title">Мой заказ</div>
+                                <div class="order__info-group">
+                                    <div class="order__info-item">
+                                        <div class="order__info-item-title">
+                                            Товар <span>(2)</span>
+                                        </div>
+                                        <div class="order__info-item-price">1 500 ₽</div>
                                     </div>
-                                    <div class="cart__info-price">1500 ₽</div>
+                                    <div class="order__info-item">
+                                        <div class="order__info-item-title">
+                                            Товар <span>(2)</span>
+                                        </div>
+                                        <div class="order__info-item-price">1 500 ₽</div>
+                                    </div>
+                                    <div class="order__info-item">
+                                        <div class="order__info-item-title">
+                                            Товар <span>(2)</span>
+                                        </div>
+                                        <div class="order__info-item-price">1 500 ₽</div>
+                                    </div>
+                                    <div class="order__info-item">
+                                        <div class="order__info-item-title">
+                                            Товар <span>(2)</span>
+                                        </div>
+                                        <div class="order__info-item-price">1 500 ₽</div>
+                                    </div>
                                 </div>
-                                <button class="cart__info-next btn btn-blue">Далее</button>
-                                <button class="cart__info-prev btn">Вернуться к покупкам</button>
+                                <div class="order__info-group">
+                                    <div class="order__info-item">
+                                        <div class="order__info-item-title">
+                                            <span>Подытог</span>
+                                        </div>
+                                        <div class="order__info-item-price">6 000 ₽</div>
+                                    </div>
+                                    <div class="order__info-item">
+                                        <div class="order__info-item-title">
+                                            <span>Доставка</span>
+                                        </div>
+                                        <div class="order__info-item-price">500 ₽</div>
+                                    </div>
+                                </div>
+                                <div class="order__info-group">
+                                    <div class="order__info-item">
+                                        <div class="order__info-item-title order__info-item-title--big">
+                                            Итого
+                                        </div>
+                                        <div class="order__info-item-price order__info-item-price--big">6 000 ₽</div>
+                                    </div>
+                                </div>
+                                <div class="order__info-pay">
+                                    <div class="order__info-pay-title">Оплата</div>
+                                    <div class="order__radio radio">
+                                        <input checked type='radio' id='pay1' name='pay' />
+                                        <label for='pay1'>Оплата онлайн</label>
+                                    </div>
+                                    <div class="order__radio radio">
+                                        <input type='radio' id='pay2' name='pay' />
+                                        <label for='pay2'>Наличными</label>
+                                    </div>
+                                </div>
+                                <button class="order__info-btn btn btn-blue">Оформить заказ</button>
+                                <div class="order__info-check check">
+                                    <input type='checkbox' class='checkbox' id='c' />
+                                    <label for='c'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore e </label>
+                                </div>
                             </div>
                         </div>
                     </div>

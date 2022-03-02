@@ -59,34 +59,16 @@
 
 @media screen and (max-width: 992px) {
     .reviews {
-        &__left {
-            width: 170px;
-            margin-right: 33px;
-        }
         &__text-block {
             p:nth-child(2) {
                 display: none;
             }
-        }
-        .reviews__left-title--active {
-            color: #1DAFD1;
-        }
-        .reviews__left-link--active {
-            color: #242321;
-        }
-        &__right {
-            padding-top: 0;
-            margin-top: 80px;
         }
     }
 }
 
 @media screen and (max-width: 790px) {
     .reviews {
-        padding-top: 0;
-        &__inner {
-            display: block;
-        }
         &__item {
             &-img {
                 width: 68px;

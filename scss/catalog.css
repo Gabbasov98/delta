@@ -166,76 +166,12 @@
       display: none; }
 .catalog-filter__check {
   margin-left: 4px;
-  position: relative;
   margin-bottom: 12px; }
-  .catalog-filter__check input {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    opacity: 0; }
-    .catalog-filter__check input:checked + label:before {
-      background-image: url(../images/checked.svg); }
   .catalog-filter__check label {
-    padding-left: 25px;
-    position: relative;
-    font-size: 16px;
-    line-height: 136%;
-    margin-bottom: 0;
-    font-weight: normal;
-    min-height: 22px;
-    cursor: pointer; }
-    .catalog-filter__check label:before {
-      content: '';
-      position: absolute;
-      z-index: 1;
-      top: 2.5px;
-      left: 0;
-      background-image: url(../images/check.svg);
-      background-size: 100% 100%;
-      width: 17px;
-      height: 17px;
-      transition: all .2s; }
-  .catalog-filter__check--hidden {
-    display: none; }
-  .catalog-filter__check--color label {
-    display: flex;
-    align-items: center; }
-    .catalog-filter__check--color label i {
-      width: 18px;
-      height: 18px;
-      border-radius: 50%;
-      margin-right: 5px; }
+    min-height: 22px; }
 .catalog-filter__radio {
   margin-left: 4px;
-  position: relative;
   margin-bottom: 12px; }
-  .catalog-filter__radio input {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    opacity: 0; }
-    .catalog-filter__radio input:checked + label:before {
-      background-image: url(../images/radio-checked.svg); }
-  .catalog-filter__radio label {
-    padding-left: 25px;
-    position: relative;
-    font-size: 16px;
-    line-height: 136%;
-    margin-bottom: 0;
-    font-weight: normal;
-    min-height: 22px;
-    cursor: pointer; }
-    .catalog-filter__radio label:before {
-      content: '';
-      position: absolute;
-      z-index: 1;
-      top: 4px;
-      left: 0;
-      background-image: url(../images/radio.svg);
-      background-size: 100% 100%;
-      width: 14px;
-      height: 14px;
-      transition: all .2s; }
 .catalog-filter__all {
   font-weight: 500;
   font-size: 16px;

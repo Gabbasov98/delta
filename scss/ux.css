@@ -22,7 +22,7 @@ input {
   color: #FFFFFF; }
   .btn-blue:hover {
     color: #FFFFFF;
-    background: rgba(0, 83, 159, 0.9); }
+    background: #004788; }
 
 .btn-grey {
   background: #F5F5F5;
@@ -307,6 +307,87 @@ input {
       color: #fff; }
   .pagination__dots {
     pointer-events: none; }
+
+.check {
+  flex-shrink: 0;
+  position: relative; }
+  .check input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0; }
+    .check input:checked + label:before {
+      background-image: url(../images/checked.svg); }
+  .check label {
+    padding-left: 25px;
+    position: relative;
+    font-size: 16px;
+    line-height: 136%;
+    margin-bottom: 0;
+    font-weight: normal;
+    min-height: 17px;
+    min-width: 17px;
+    cursor: pointer; }
+    .check label:before {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      top: 2.5px;
+      left: 0;
+      background-image: url(../images/check.svg);
+      background-size: 100% 100%;
+      width: 17px;
+      height: 17px;
+      transition: all .2s; }
+
+.radio {
+  position: relative; }
+  .radio input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0; }
+    .radio input:checked + label:before {
+      background-image: url(../images/radio-checked.svg); }
+  .radio label {
+    padding-left: 25px;
+    position: relative;
+    font-size: 16px;
+    line-height: 136%;
+    margin-bottom: 0;
+    font-weight: normal;
+    min-height: 22px;
+    cursor: pointer; }
+    .radio label:before {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      top: 4px;
+      left: 0;
+      background-image: url(../images/radio.svg);
+      background-size: 100% 100%;
+      width: 14px;
+      height: 14px;
+      transition: all .2s; }
+
+.form-group {
+  margin: 0; }
+  .form-group input,
+  .form-group textarea {
+    border: 1px solid #DCDCDC;
+    border-radius: 6px;
+    width: 100%;
+    height: 40px;
+    padding: 0 15px;
+    font-size: 16px;
+    line-height: 136%; }
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: rgba(36, 35, 33, 0.5); }
+  .form-group textarea {
+    height: 133px;
+    padding: 8px 15px;
+    resize: none; }
 
 @media screen and (max-width: 1200px) {
   .pagination__item {
