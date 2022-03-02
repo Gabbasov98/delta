@@ -405,9 +405,31 @@ $(document).ready(function() {
         } else {
             $(".cart-card__check input").prop('checked', false)
         }
+    })
 
+    $(".qa-card__btn").click(function() {
+        $(this).toggleClass("qa-card__btn--active")
+        $(this).parents(".qa-card").find(".qa-card__hidden").slideToggle()
+    })
+
+    checkInputFilled()
+    $(".field").change(function() {
+        checkInputFilled()
     })
 })
+
+
+function checkInputFilled() {
+    $(".field").each(function(index, el) {
+        let val = $(el).val()
+        let val2 = $(el).html()
+        if (val || val2) {
+            $(el).addClass("filled")
+        } else {
+            $(el).removeClass("filled")
+        }
+    });
+}
 
 
 function cartSelect() {

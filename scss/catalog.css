@@ -185,8 +185,9 @@
   line-height: 20px;
   margin-bottom: 15px; }
 .catalog-filter__refresh {
-  background: #F5F5F5;
   color: #F24941; }
+  .catalog-filter__refresh:hover {
+    color: #F24941; }
 .catalog-filter__less {
   background: linear-gradient(0deg, rgba(0, 83, 159, 0.1), rgba(0, 83, 159, 0.1)), #FFFFFF;
   color: #00539F; }

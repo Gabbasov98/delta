@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/nice-select.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel='stylesheet' href='css/jquery.mCustomScrollbar.css' />
     <link rel="stylesheet" href="css/style.css">
     <title>Оформление заказа</title>
@@ -409,23 +408,30 @@
                             <form class="order__form">
                                 <div class="order__title">Заполните контактные данные</div>
                                 <div class="order__form-grid">
-                                    <fieldset class='order__form-group form-group'>
-                                        <input type='text' placeholder="Имя" />
+                                    <fieldset class='order__form-group form-group form-group--error'>
+                                        <input class="field" type='text' />
+                                        <label>Имя</label>
+                                        <span class="form-group__error-text">Текст ошибки</span>
                                     </fieldset>
                                     <fieldset class='order__form-group form-group'>
-                                        <input type='text' placeholder="Фамилия" />
+                                        <input class="field" type='text' />
+                                        <label>Фамилия</label>
                                     </fieldset>
                                     <fieldset class='order__form-group form-group'>
-                                        <input type='email' placeholder="Почта" />
+                                        <input class="field" type='email' />
+                                        <label>Почта</label>
                                     </fieldset>
                                     <fieldset class='order__form-group form-group'>
-                                        <input type='tel' placeholder="+ 7 (999) 999-99-99" />
+                                        <input class="field" type='tel' />
+                                        <label>Телефон</label>
                                     </fieldset>
                                     <fieldset class='order__form-group order__form-group--100 form-group'>
-                                        <input type='text' placeholder="Адрес доставки" />
+                                        <input class="field" type='text' />
+                                        <label>Адрес доставки</label>
                                     </fieldset>
                                     <fieldset class='order__form-group order__form-group--100 form-group'>
-                                        <textarea placeholder="Дополнительная информация"></textarea>
+                                        <textarea class="field"></textarea>
+                                        <label>Дополнительная информация</label>
                                     </fieldset>
                                 </div>
                                 <button class="order__form-btn btn btn-blue">Сохранить</button>
@@ -563,16 +569,14 @@
             </section>
         </footer>
 
-
-        <script src="js/jquery-1.11.3.min.js"></script>
-        <script src="js/jquery.nice-select.min.js"></script>
-        <script src="js/jquery.maskedinput.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.fancybox.min.js"></script>
-        <script src='js/jquery.mCustomScrollbar.concat.min.js'></script>
-        <script src="js/swiper.js"></script>
-        <script src="js/index.js"></script>
     </div>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src='js/jquery.mCustomScrollbar.concat.min.js'></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/index.js"></script>
+
 
 
 

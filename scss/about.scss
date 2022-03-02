@@ -80,6 +80,8 @@
             display: flex;
             overflow-x: auto;
             gap: unset;
+            @include scroll();
+            padding-bottom: 10px;
         }
         &__img {
             width: 177px;
@@ -90,7 +92,7 @@
             }
         }
         &__desc {
-            margin-top: 70px;
+            margin-top: 60px;
         }
         &__certificates {
             padding-top: 30px;
@@ -100,6 +102,8 @@
             &-item {
                 overflow-x: auto;
                 justify-content: space-between;
+                @include scroll();
+                padding-bottom: 10px;
             }
             &-img {
                 width: 237px;

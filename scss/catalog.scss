@@ -260,8 +260,10 @@
         margin-bottom: 15px;
     }
     &__refresh {
-        background: #F5F5F5;
         color: #F24941;
+        &:hover {
+            color: #F24941;
+        }
     }
     &__less {
         background: linear-gradient(0deg, rgba(0, 83, 159, 0.1), rgba(0, 83, 159, 0.1)), #FFFFFF;
